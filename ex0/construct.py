@@ -7,11 +7,17 @@ import site
 
 
 def is_virtual_env() -> bool:
+
+    print("IS VENV\n")
+    print(sys.prefix)
+    print(sys.base_prefix)
     return sys.prefix != sys.base_prefix
 
 
 def get_path_package() -> str:
     paths: list[str] = site.getsitepackages()
+    # paths: list[str] = sys.path
+    
 
     for path in paths:
         if "site-packages" in path:
