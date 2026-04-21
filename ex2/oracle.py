@@ -41,10 +41,7 @@ def main() -> None:
     if not load_dotenv(override=False):
         print("[WARNING]: No .env file found.")
 
-    load_dotenv()
-
     print("\nORACLE STATUS: Reading the Matrix...\n")
-
     print("Configuration loaded:")
 
     # 1.- MATRIX_MODE
@@ -55,7 +52,7 @@ def main() -> None:
 
     # 2.- DATABASE_URL
     if not os.getenv("DATABASE_URL"):
-        print("[WARNING] Missing Configuration for DATABSE_URL")
+        print("[WARNING] Missing Configuration for DATABASE_URL")
     db_status: str = (
         "Connected" if os.getenv("DB_PASS")
         else "Connected to local instance"
