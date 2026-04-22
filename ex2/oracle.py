@@ -8,7 +8,6 @@ try:
 except ImportError:
     print("Error: python-dotenv is not installed.")
     sys.exit(1)
-# from typing import Final
 
 
 def security_check() -> None:
@@ -30,7 +29,7 @@ def security_check() -> None:
     # Check for production overrides
     # test using environment variable MATRIX_MODE
     if os.getenv("MATRIX_MODE") == "production":
-        print("[OK] Production overrides available")
+        print("[OK] Production overrides available (Running in Prod)")
     else:
         # If it's in development, show that overrides are ready but not active
         print("[INFO] Production overrides available (Running in Dev)")
