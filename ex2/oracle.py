@@ -7,6 +7,7 @@ try:
     from dotenv import load_dotenv
 except ImportError:
     print("Error: python-dotenv is not installed.")
+    print("pip install python-dotenv")
     sys.exit(1)
 
 

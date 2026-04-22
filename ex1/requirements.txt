@@ -1,8 +1,8 @@
 # Data Analysis and Manipulation
-pandas>=2.0.0
+pandas==1.5.3
 
 # Numerical Computing (Required dependency for pandas & subject)
-numpy>=1.24.0
+numpy==1.21.5
 
 # Data Visualization (Required for matrix_analysis.png)
-matplotlib>=3.7.0
+matplotlib==3.5.1
